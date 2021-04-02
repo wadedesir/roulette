@@ -1,6 +1,8 @@
-# [Project Name]
+# Roulette
 
-![(description)](https://raw.githubusercontent.com/your github username/repo name/main/file name.PNG)
+Check it out: https://link.com/
+
+![Website thumbnail](https://raw.githubusercontent.com/wadedesir/roulette/main/thumbnail.png)
 
 ## How It's Made:
 
