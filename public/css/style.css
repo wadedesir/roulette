@@ -26,10 +26,10 @@ html{
 body {
   line-height: 1.4;
   font-family: Helvetica, Arial, sans-serif;
-  /* background: url("/img/bg5.jpg") no-repeat center center fixed; */
-  /* background-size:  cover; */
+  background: url("/img/bg3.jpg") no-repeat center center fixed;
+  background-size:  cover;
   height: 100vh;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 
@@ -40,18 +40,25 @@ body {
 aside,
 section,
 main{
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  color: white;
+  font-weight: bold;
 }
 
+h1{
+  color: white;
+  font-weight: bold;
+}
 .rouletteWheel{
-  height: 65%;
+  height: 50%;
+  /* width: 100%; */
   background: url("/img/wheel.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size:  contain;
 }
 .rouletteWheel div{
-  height: 30%;
+  height: 50%;
   color: white;
 }
 .rouletteWheel h3{
@@ -71,24 +78,29 @@ img{
   max-height: 100%;
   cursor: pointer;
 }
+
 img:hover{
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
 section div{
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  margin-top: 1%;
 }
 .tableWrapper{
   /* border: 1px solid black; */
   width: 70%;
   position: relative;
   margin-top: 1%;
-  height: 50%;
+  height: 500px;
   /* visibility: hidden; */
 }
 .scrollAssist{
   overflow: auto;
-  height: 100%;;
+  height: 100%;
+}
+.moodTable{
+  width: 100%;
 }
 .tableWrapper tr{
   border-bottom: 1px solid lightgray;
@@ -98,6 +110,9 @@ section div{
   justify-content: space-evenly;
   border-bottom: 1px solid black;
 }
+.tableBody tr:first-child{
+  margin-top: 2%;
+}
 .tableBody td{
   width: 100%;
   text-align: center;
@@ -105,7 +120,6 @@ section div{
 }
 table{
   background-color: rgba(255, 255, 255, 0.55);
-  margin-top: 2%;
 }
 table thead th{
   background-color: white;
@@ -115,16 +129,40 @@ table thead th{
 }
 
 .headtr{
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   left:0;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100%;
 }
 
+#ball {
+  /* position: absolute; */
+  /* top: 0%; */
+  /* left: 50%; */
+  /* max-width: 14%; */
+  /* max-height: auto; */
+  /* margin-left: -25px; */
+  /* margin-top: -25px; */
+}
 
+#ball-out {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+
+  /* max-width: 40%; */
+  /* height: auto; */
+  /* margin-top: -200px;
+  margin-left: -200px; */
+
+  /* border-width: 6px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 50%; */
+}
 
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -138,4 +176,27 @@ table thead th{
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(1500deg);
+       -moz-transform: rotate(1500deg);
+        -ms-transform: rotate(1500deg);
+         -o-transform: rotate(1500deg);
+            transform: rotate(1500deg);
+  }
+}
+
+
+#ball-out {
+
+  -webkit-animation: spin-right 2s linear;
+     -moz-animation: spin-right 2s linear;
+      -ms-animation: spin-right 2s linear;
+       -o-animation: spin-right 2s linear;
+          animation: spin-right 2s linear;
+}
+
+@media (min-width: 900px){
 }
