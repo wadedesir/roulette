@@ -1,6 +1,6 @@
 # Roulette
 
-Check it out: https://link.com/
+<!-- Check it out: https://link.com/ -->
 
 ![Website thumbnail](https://raw.githubusercontent.com/wadedesir/roulette/main/thumbnail.png)
 
